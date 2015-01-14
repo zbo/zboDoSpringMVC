@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/hello")
-public class HelloController {
+@RequestMapping("/upload")
+public class UploadController {
 	@RequestMapping(method = RequestMethod.GET)
-	public String printWelcome(ModelMap model) {
-		model.addAttribute("message", "Hello world!");
+	public String uploadPage(ModelMap model) {
+		model.addAttribute("message", "upload!");
         model.addAttribute("time", DateTime.now());
-		return "hello";
+		return "upload/upload";
 	}
 }

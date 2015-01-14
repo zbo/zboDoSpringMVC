@@ -1,0 +1,3 @@
+---
+- name: copy war package to server
+  copy:  src=/Users/twer/project/zboDoSpringMVC/target/zboDoSpringMVC.war dest=/home/vagrant/InstallSave/jetty-distribution-9.2.6.v20141205/webapps
